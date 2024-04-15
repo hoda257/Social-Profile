@@ -1,0 +1,90 @@
+/* Link font file */
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root {
+    --main-color: hotpink;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    font-family: "Inter", Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.card-container {
+    background-color: rgba(47, 48, 48, 0.815);
+    border-radius: 10px;
+    padding: 35px;
+    max-width: 380px;
+}
+
+@media (max-width:767px) {
+    .card-container {
+        width: 340px;
+    }
+}
+
+.card-container .main-profile,
+.card-container .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .main-profile .text {
+    text-align: center;
+}
+
+.card-container img {
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.card-container .text h1 {
+    margin-bottom: 5px;
+}
+
+.card-container .text p:first-of-type {
+    font-weight: 600;
+    color: var(--main-color);
+
+}
+
+.card-container .text p:last-of-type {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.card-container .social-links a {
+    text-decoration: none;
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+
+.card-container .social-links a:hover {
+    background-color: var(--main-color);
+}
